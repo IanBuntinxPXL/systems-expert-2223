@@ -3,6 +3,7 @@ kind: CronJob
 metadata:
   name: cronjob-example
 spec:
+  suspend: true
   schedule: "*/1 * * * *"
   successfulJobsHistoryLimit: 2
   failedJobsHistoryLimit: 1
